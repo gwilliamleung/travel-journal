@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #F55A5A;
+    color:#FFFFFF;
+    padding: 30px 20px;
+}
+
+header h2{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.cards-container{
+    display:flex;
+}
+
+.card{
+    display:grid;
+    margin:0 auto;
+    padding: 50px 80px;
+    grid-template-columns: 400px 150px 175px 150px;
+    grid-template-areas: 
+        "img location gMap gMap"
+        "img middle middle ."
+        "img description description description";
+    border-bottom:#F5F5F5 solid 1px;
+}
+.image{grid-area: img}
+.location{grid-area: location}
+.gMap{grid-area:gMap}
+.middle{grid-area:middle}
+.description{grid-area: description}
+
+
+.image {
+    object-fit: cover;
+    width:250px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.location{
+    font-weight:400;
+    text-transform: uppercase;
+    font-size:16px;
+    align-self: flex-end;
+}
+
+.gMap{
+    font-weight: 400;
+    font-size: 16px;
+    align-self: flex-end;
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.middle{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.attraction{
+    font-size:32px;
+    color: #2B283A;
+}
+
+.date{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    color: #2B283A;
+}
+
+.description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B283A;
+}
