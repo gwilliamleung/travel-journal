@@ -21,6 +21,7 @@ header h2{
 
 .cards-container{
     display:flex;
+    flex-direction: column;
 }
 
 .card{
